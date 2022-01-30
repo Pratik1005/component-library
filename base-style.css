@@ -1,0 +1,155 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* Variables */
+:root {
+    /* Primary color */
+    --clr-primary: #6D28D9;
+    --clr-dark: #282828;
+    --ff-primary: "Roboto", sans-serif;
+    --transition: all 0.3s linear;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+h1,
+.para-xxl {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+h2,
+.para-xl {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+h3,
+.para-lg {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h4,
+.para-md {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+h5,
+.para-sm {
+    font-size: 0.5rem;
+    line-height: 1rem;
+}
+
+.fw-light {
+    font-weight: 300;
+}
+
+.fw-regular {
+    font-weight: 400;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fw-dark {
+    font-weight: 900;
+}
+
+/* Margin */
+.mg-xs {
+    margin: 0.5rem;
+}
+
+.mg-sm {
+    margin: 1rem;
+}
+
+.mg-md {
+    margin: 1.5rem;
+}
+
+.mg-lg {
+    margin: 2rem;
+}
+
+.mg-xl {
+    margin: 2.5rem;
+}
+
+.mg-xxl {
+    margin: 4rem;
+}
+
+/* Padding */
+.pd-xs {
+    padding: 0.5rem;
+}
+
+.pd-sm {
+    padding: 1rem;
+}
+
+.pd-md {
+    padding: 1.5rem;
+}
+
+.pd-lg {
+    padding: 2rem;
+}
+
+.pd-xl {
+    padding: 2.5rem;
+}
+
+.pd-xxl {
+    padding: 4rem;
+}
+
+/* Border radius */
+.br-sm {
+    border-radius: 5px;
+}
+
+.br-md {
+    border-radius: 10px;
+}
+
+.br-lg {
+    border-radius: 15px;
+}
+
+.br-full {
+    border-radius: 999px;
+}
+
+body {
+    font-family: var(--ff-primary);
+    color: var(--clr-dark);
+    font-size: 0.875rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* Utility classes */
+.flex-ctn {
+    display: flex;
+}
+
