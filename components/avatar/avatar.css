@@ -1,5 +1,10 @@
 @import "../../base-style.css";
 
+body {
+    font-family: var(--ff-primary);
+    color: var(--clr-txt-dark);
+}
+
 .avatar-sm {
     width: 2rem;
     height: 2rem;

@@ -1,0 +1,50 @@
+@import "../base-style.css";
+@import "../style.css";
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: var(--clr-txt-dark);
+    margin: 3rem 1rem;
+}
+
+.docs-ctn {
+    display: grid;
+    grid-template-areas: 
+    "aside comp comp comp comp comp"
+    "aside comp comp comp comp comp"
+    "aside comp comp comp comp comp"
+    "aside comp comp comp comp comp"
+    "aside comp comp comp comp comp"
+    "aside comp comp comp comp comp";
+}
+
+.docs-ctn aside.docs-sidebar {
+    grid-area: aside;
+    background-color: var(--clr-background-light);
+    padding: 1rem 2rem;
+}
+
+aside.docs-sidebar h3 {
+    padding-top: 1rem 0;
+}
+
+aside.docs-sidebar .components-link {
+    display: flex;
+    flex-direction: column;
+}
+
+aside.docs-sidebar .components-link a{
+    color: var(--clr-txt-dark);
+    padding: 0.625rem;
+}
+
+aside.docs-sidebar .components-link a:hover{
+    color: var(--clr-primary);
+    background-color: var(--clr-primary-light);
+    border-radius: 0.25rem;
+}
+
+.docs-ctn .docs-component {
+    grid-area: comp;
+}

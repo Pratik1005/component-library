@@ -1,0 +1,85 @@
+@import "./components/components.css";
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+body {
+    font-family: var(--ff-primary);
+    color: var(--clr-txt-dark);
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-background-light);
+    padding: 1rem 2rem;
+    box-shadow: var(--light-shadow);
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    font-family: 'Yellowtail', cursive;
+    color: var(--clr-primary);
+    font-size: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--clr-txt-dark);
+    font-weight: var(--fw-bold);
+    padding: 0.625rem;
+}
+
+nav a:hover {
+    color: var(--clr-primary);
+    background-color: var(--clr-primary-light);
+    border-radius: 0.25rem;
+}
+
+/* hero */
+section.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    padding: 1rem 2rem;   
+    margin-top: 1rem;
+}
+
+.hero-ctn .hero-title {
+    margin-bottom: 1rem;
+}
+
+.hero-ctn h2 {
+    margin-bottom: 1rem;
+}
+
+.hero-ctn .hero-links {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    gap: 1rem;
+}
+
+.hero-links .cta-link-1 {
+    background-color: var(--clr-primary);
+    color: #fff;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+}
+
+.hero-links .cta-link-2 {
+    color: var(--clr-primary);
+    padding: 0.375rem 0.75rem;
+    border: 1px solid var(--clr-primary);
+    border-radius: 0.25rem;
+}
+
+.hero-links .cta-link-2:hover {
+    background-color: var(--clr-primary);
+    color: #fff;
+    transition: var(--transition);
+}

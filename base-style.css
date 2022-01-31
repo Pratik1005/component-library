@@ -5,7 +5,10 @@
 :root {
     /* Primary color */
     --clr-primary: #6D28D9;
-    --clr-dark: #282828;
+    --clr-primary-light: #EDE9FE;
+    --clr-background-light: #fafafa;
+    --clr-component-border: #dee2e6;
+    --clr-txt-dark: #282828;
     --ff-primary: "Roboto", sans-serif;
     --transition: all 0.3s linear;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -138,13 +141,7 @@ h5,
     border-radius: 999px;
 }
 
-body {
-    font-family: var(--ff-primary);
-    color: var(--clr-dark);
-    font-size: 0.875rem;
-}
-
-img {
+.img-full {
     width: 100%;
 }
 
@@ -153,3 +150,7 @@ img {
     display: flex;
 }
 
+.component-box-border {
+    border: 0.125rem solid #dee2e6;
+    border-radius: 0.25rem;
+}
