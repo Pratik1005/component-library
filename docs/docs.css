@@ -1,4 +1,5 @@
 @import "../base-style.css";
+@import "../components/components.css";
 @import "../style.css";
 
 .component-box-border {
