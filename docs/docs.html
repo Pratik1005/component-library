@@ -25,12 +25,46 @@
         <aside class="docs-sidebar">
             <h2>Components</h2>
             <div class="components-link">
-                <a class="fw-bold" href="#avatar">Avatar</a>
-                <a class="fw-bold" href="#badge">Badge</a>
+                <a href="#alert" class="fw-bold">Alert</a>
+                <a href="#avatar" class="fw-bold">Avatar</a>
+                <a href="#badge" class="fw-bold">Badge</a>
+                <a href="#button" class="fw-bold">Button</a>
             </div>
         </aside>
         <!-- Components -->
         <div class="docs-component">
+            <!-- Alert -->
+            <h1 id="alert" class="mg-sm">Alert</h1>
+            <h2 class="mg-sm">Alert with text, link and icon.</h2>
+            <div class="alert-ctn component-box-border mg-sm pd-sm">
+                <div class="alert-box alert-primary">
+                    A simple primary alert—check it out!
+                </div>
+                <div class="alert-box alert-secondary">
+                    A simple secondary alert with—<a href="#"> an example link</a>
+                </div>
+                <div class="alert-box alert-success">
+                    <span class="material-icons">check_circle</span>
+                    An example success alert with an icon
+                </div>
+                <div class="alert-box alert-warning">
+                    <span class="material-icons">warning</span>
+                    An example warning alert with an icon
+                </div>
+                <div class="alert-box alert-danger">
+                    <span class="material-icons">error</span>
+                    An example danger alert with an icon
+                </div>
+            </div>
+            <h2 class="mg-sm">Alert with dismiss button.</h2>
+            <div class="alert-ctn component-box-border mg-sm pd-sm">
+                <div class="alert-box alert-primary alert-dismiss">
+                    <div>A simple primary alert—check it out!</div>
+                    <span id="alert-dismiss-btn" class="material-icons">close</span>
+                </div>
+            </div>
+            <hr class="divider">
+
             <!-- Avatar -->
             <h1 id="avatar" class="mg-sm">Avatar</h1>
             <h2 class="mg-sm">Image Avatar</h2>
@@ -94,7 +128,42 @@
                     <span class="badge-avatar badge-sm badge-offline br-full"></span>
                 </div>
             </div>
+            <hr class="divider">
+
+            <!-- Buttons -->
+            <h1 id="button" class="mg-sm">Button</h1>
+            <h2 class="mg-sm">Primary & link button</h2>
+            <div class="flex-ctn component-box-border mg-sm pd-sm">
+                <a href="#" class="btn btn-primary mg-sm">Primary Solid</a>
+                <a href="#" class="btn btn-primary-outline mg-sm">Primary Outline</a>
+                <a href="#" class="btn btn-link mg-sm">Link button</a>
+            </div>
+            <h2 class="mg-sm">Icon button</h2>
+            <div class="flex-ctn component-box-border mg-sm pd-sm">
+                <a href="#" class="btn btn-icon mg-sm">
+                    <span class="material-icons">shopping_cart</span>
+                </a>
+                <a href="#" class="btn btn-icon-text mg-sm">
+                    <span class="material-icons">home</span>
+                    Home
+                </a>
+                <a href="#" class="btn btn-icon-text-outline mg-sm">
+                    <span class="material-icons">search</span>
+                    Search
+                </a>
+            </div>
+            <h2 class="mg-sm">Floating action button</h2>
+            <div class="flex-ctn component-box-border mg-sm pd-sm">
+                <a href="#" class="btn-float-action mg-sm">
+                    <span class="material-icons">add</span>
+                </a>
+                <a href="#" class="btn-float-action mg-sm">
+                    <span class="material-icons">edit</span>
+                </a>
+            </div>
         </div>
     </section>
+
+    <script src="../components/components.js"></script>
 </body>
 </html>

@@ -1,6 +1,11 @@
 @import "../base-style.css";
 @import "../style.css";
 
+.component-box-border {
+    border: 0.125rem solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
 .divider {
     border: 0;
     height: 1px;
@@ -47,4 +52,13 @@ aside.docs-sidebar .components-link a:hover{
 
 .docs-ctn .docs-component {
     grid-area: comp;
+}
+
+/* alert */
+.alert-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
