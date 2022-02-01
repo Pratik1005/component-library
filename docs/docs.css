@@ -1,6 +1,11 @@
 @import "../base-style.css";
 @import "../style.css";
 
+.component-box-border {
+    border: 0.125rem solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
 .divider {
     border: 0;
     height: 1px;

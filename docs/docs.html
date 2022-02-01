@@ -25,6 +25,7 @@
         <aside class="docs-sidebar">
             <h2>Components</h2>
             <div class="components-link">
+                <a class="fw-bold" href="#alert">Alert</a>
                 <a class="fw-bold" href="#avatar">Avatar</a>
                 <a class="fw-bold" href="#badge">Badge</a>
             </div>
@@ -32,7 +33,7 @@
         <!-- Components -->
         <div class="docs-component">
             <!-- Alert -->
-            <h1 class="mg-sm">Alert</h1>
+            <h1 id="alert" class="mg-sm">Alert</h1>
             <h2 class="mg-sm">Alert with text, link and icon.</h2>
             <div class="alert-ctn component-box-border mg-sm pd-sm">
                 <div class="alert-box alert-primary">
@@ -55,8 +56,14 @@
                 </div>
             </div>
             <h2 class="mg-sm">Alert with dismiss button.</h2>
-            
+            <div class="alert-ctn component-box-border mg-sm pd-sm">
+                <div class="alert-box alert-primary alert-dismiss">
+                    <div>A simple primary alert—check it out!</div>
+                    <span id="alert-dismiss-btn" class="material-icons">close</span>
+                </div>
+            </div>
             <hr class="divider">
+
             <!-- Avatar -->
             <h1 id="avatar" class="mg-sm">Avatar</h1>
             <h2 class="mg-sm">Image Avatar</h2>
@@ -123,5 +130,7 @@
             <hr class="divider">
         </div>
     </section>
+
+    <script src="../components/components.js"></script>
 </body>
 </html>
