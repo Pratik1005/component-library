@@ -7,3 +7,23 @@ const removeDismissAlert = () => {
 }
 
 alertDismissBtn.addEventListener("click", removeDismissAlert);
+
+// Input form
+const formButton = document.querySelector("#form-submit");
+const formName = document.querySelector("#form-name");
+const formNumber = document.querySelector("#form-number");
+const formChecked = document.querySelector("#terms");
+
+const formValidation = () => {
+    if (formName.value === "") {
+        setError(formName, 'Name cannot be empty')
+    }else {
+        setSuccessFor(formName)
+    }
+
+    if (!formChecked.checked) {
+        setError(formChecked)
+    }
+}
+
+formButton.addEventListener("click", formValidation)

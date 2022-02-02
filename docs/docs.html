@@ -30,6 +30,8 @@
                 <a href="#badge" class="fw-bold">Badge</a>
                 <a href="#button" class="fw-bold">Button</a>
                 <a href="#card" class="fw-bold">Card</a>
+                <a href="#image" class="fw-bold">Image</a>
+                <a href="#input" class="fw-bold">Input</a>
             </div>
         </aside>
         <!-- Components -->
@@ -293,6 +295,54 @@
                             Add to cart
                         </a>
                     </div>
+                </div>
+            </div>
+
+            <!-- image -->
+            <h1 id="image" class="mg-sm">Image</h1>
+            <h2 class="mg-sm">Responsive image</h2>
+            <div class="flex-ctn component-box-border image-ctn mg-sm pd-sm">
+                <img src="../components/images/forest.jpg" alt="responsive-image" class="img-responsive mg-sm">
+            </div>
+            <h2 class="mg-sm">Round image</h2>
+            <div class="component-box-border mg-sm pd-sm">
+                <img src="../components/images/pratik.jpeg" alt="round-image" class="avatar-xl img-round mg-sm">
+            </div>
+
+            <!-- input -->
+            <h1 id="input" class="mg-sm">Input</h1>
+            <h2 class="g-sm">Inputs with validation and error style</h2>
+            <div class="component-box-border mg-sm pd-sm">
+                <div class="form-ctn">
+                    <div class="form-field">
+                        <label for="">Name</label>
+                        <input type="text" id="form-name">
+                        <span class="material-icons correct">check_circle</span>
+                        <span class="material-icons incorrect">error</span>
+                        <div class="error-mssg">Error</div>
+                    </div>
+                    <div class="form-field">
+                        <label for="country-select">Country</label>
+                        <select name="country" id="country-select">
+                            <option value="india">India</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="">Gender</label>
+                        <div>
+                            <input type="radio" id="male" name="gender" checked>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <input type="checkbox" id="terms" name="aggrement">
+                        <label for="aggrement" class="checkbox">I accept all terms*</label>
+                        <div class="error-mssg">Error</div>
+                    </div>
+                    <button id="form-submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </div>
