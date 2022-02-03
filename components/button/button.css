@@ -3,6 +3,10 @@
 .btn {
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: inherit;
 }
 
 .btn-primary {
