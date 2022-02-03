@@ -17,18 +17,21 @@
 .docs-ctn {
     display: grid;
     grid-template-areas: 
-    "aside comp comp comp comp comp"
-    "aside comp comp comp comp comp"
-    "aside comp comp comp comp comp"
-    "aside comp comp comp comp comp"
-    "aside comp comp comp comp comp"
-    "aside comp comp comp comp comp";
+    "aside aside comp comp comp comp"
+    "aside aside comp comp comp comp"
+    "aside aside comp comp comp comp"
+    "aside aside comp comp comp comp"
+    "aside aside comp comp comp comp"
+    "aside aside comp comp comp comp";
 }
 
 .docs-ctn aside.docs-sidebar {
     grid-area: aside;
     background-color: var(--clr-background-light);
     padding: 1rem 2rem;
+    position: sticky;
+    top: 0rem;
+    height: calc(100vh - 2rem);
 }
 
 aside.docs-sidebar h3 {
@@ -62,4 +65,30 @@ aside.docs-sidebar .components-link a:hover{
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--clr-primary);
+    color: #fff;
+    padding: 2rem 0;
+}
+
+footer .footer-links a{
+    color: #fff;
+    padding-right: 0.875rem;
+    font-size: 1.5rem;
+}
+
+footer p.copyright {
+    font-size: 0.875rem;
+}
+
+/* code block */
+.docs-code-block, iframe {
+    width: 100%
 }
