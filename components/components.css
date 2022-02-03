@@ -5,3 +5,5 @@
 @import "./card/card.css";
 @import "./image/image.css";
 @import "./input/input.css";
+@import "./text-utilities/text-utilities.css";
+@import "./lists/list.css";

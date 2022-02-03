@@ -1,0 +1,8 @@
+ul.spaced-list {
+    display: flex;
+    gap: 2rem;
+}
+
+ul.spaced-list li {
+    list-style-type: none;
+}
