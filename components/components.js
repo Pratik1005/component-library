@@ -18,12 +18,27 @@ const formValidation = () => {
     if (formName.value === "") {
         setError(formName, 'Name cannot be empty')
     }else {
-        setSuccessFor(formName)
+        setSuccess(formName)
     }
 
     if (!formChecked.checked) {
-        setError(formChecked)
+        console.log("checkbox clicked");
+        setError(formChecked, "Please click on the box")
+    }else {
+        setSuccess(formChecked)
     }
+}
+
+const setError = (inputElement, message) => {
+    const formField = inputElement.parentElement;
+    const errorMsg = formField.querySelector(".error-mssg");
+    errorMsg.textContent = message;
+    formField.classList = "form-field error";
+}
+
+const setSuccess = (inputElement, message) => {
+    const formField = inputElement.parentElement;
+    formField.classList = "form-field success";
 }
 
 formButton.addEventListener("click", formValidation)

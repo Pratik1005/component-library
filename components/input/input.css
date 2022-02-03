@@ -21,6 +21,8 @@ input[type="text"] {
     padding: 0.5rem;
     font-family: inherit;
     font-size: inherit;
+    border: 2px solid #A9A9A9;
+    border-radius: 0.25rem;
     outline: none;
 }
 
@@ -28,6 +30,8 @@ select {
     padding: 0.5rem;
     font-family: inherit;
     font-size: inherit;
+    border: 2px solid #A9A9A9;
+    border-radius: 0.25rem;
     outline: none;
 }
 
@@ -44,12 +48,12 @@ select {
 }
 
 .form-field.success span.correct {
-    display: block;
+    display: inline-block;
     color: #2ecc71;
 }
 
-.form-field.success span.incorrect {
-    display: block;
+.form-field.error span.incorrect {
+    display: inline-block;
     color: #e74c3c;
 }
 
