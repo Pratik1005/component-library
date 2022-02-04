@@ -42,3 +42,16 @@ const setSuccess = (inputElement, message) => {
 }
 
 formButton.addEventListener("click", formValidation)
+
+// Modal demo
+const modalOverlay = document.querySelector(".modal-overlay");
+const openModalBtn = document.querySelector(".modal-open-btn");
+const closeModalBtn = document.querySelector("#modal-close");
+
+openModalBtn.addEventListener("click", () => {
+    modalOverlay.classList.add("open-modal");
+})
+
+closeModalBtn.addEventListener("click", () => {
+    modalOverlay.classList.remove("open-modal");
+})

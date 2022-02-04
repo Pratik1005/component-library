@@ -132,6 +132,14 @@ h5,
     padding-bottom: 0.25rem;
 }
 
+.pd-bottom-md {
+    padding-bottom: 0.5rem;
+} 
+
+.pd-bottom-lg {
+    padding-bottom: 1rem;
+}
+
 /* Border radius */
 .br-sm {
     border-radius: 5px;
