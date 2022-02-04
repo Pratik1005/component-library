@@ -103,6 +103,10 @@ h5,
     margin-bottom: 0.5rem;
 }
 
+.mg-bottom-md {
+    margin-bottom: 1rem;
+}
+
 /* Padding */
 .pd-xs {
     padding: 0.5rem;
