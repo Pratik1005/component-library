@@ -1,8 +1,15 @@
 ul.spaced-list {
     display: flex;
     gap: 2rem;
+    list-style-type: none;
 }
 
-ul.spaced-list li {
+ul.stacked-list {
     list-style-type: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+ul.stacked-list div.stack-list-item {
+    border: 1px solid #D5DBDB;
 }
