@@ -1,3 +1,4 @@
+@import "../base-style.css";
 @import "./avatar/avatar.css";
 @import "./badge/badge.css";
 @import "./alert/alert.css";
