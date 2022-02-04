@@ -84,3 +84,40 @@ section.hero {
     color: #fff;
     transition: var(--transition);
 }
+
+/* Install */
+.install-ctn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem;
+}
+
+.install-ctn .doc-btn {
+    margin-top: 2rem;
+}
+
+.install-code {
+    max-height: 300px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--clr-primary);
+    color: #fff;
+    padding: 2rem 0;
+}
+
+footer .footer-links a{
+    color: #fff;
+    padding-right: 0.875rem;
+    font-size: 1.5rem;
+}
+
+footer p.copyright {
+    font-size: 0.875rem;
+}
+
