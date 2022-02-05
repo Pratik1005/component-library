@@ -139,8 +139,12 @@ footer p.copyright {
         gap: 2rem;
     }
 
+    section.hero .hero-ctn {
+        order: 1
+    }
+
     section.hero .hero-image {
-        order: -1;
+        order: 0;
     }
 
     .install-ctn {

@@ -27,6 +27,7 @@
     "aside aside comp comp comp comp"
     "aside aside comp comp comp comp"
     "aside aside comp comp comp comp";
+    width: 100%;
 }
 
 .docs-ctn aside.docs-sidebar {
@@ -60,6 +61,7 @@ aside.docs-sidebar .components-link a:hover{
 
 .docs-ctn .docs-component {
     grid-area: comp;
+    width: 100%;
 }
 
 /* alert */
@@ -67,7 +69,6 @@ aside.docs-sidebar .components-link a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 1rem;
 }
 
