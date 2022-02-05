@@ -1,5 +1,6 @@
 @import "./base-style.css";
 @import "components/components.css";
+@import "./docs/mobile-menu.css";
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
 body {
@@ -40,6 +41,12 @@ nav a:hover {
     color: var(--clr-primary);
     background-color: var(--clr-primary-light);
     border-radius: 0.25rem;
+}
+
+.home-btn {
+    display: flex;
+    flex-direction: column;
+
 }
 
 /* hero */
@@ -119,5 +126,26 @@ footer .footer-links a{
 
 footer p.copyright {
     font-size: 0.875rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 800px) {
+    header nav {
+        display: none;
+    }
+
+    section.hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    section.hero .hero-image {
+        order: -1;
+    }
+
+    .install-ctn {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 

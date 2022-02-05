@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <title>LiteSpeedUI | Home</title>
@@ -16,8 +18,24 @@
             <a class="fw-bold" href="index.html">Home</a>
             <a class="fw-bold" href="docs/docs.html">Documentation</a>
         </nav>
+        <!-- Mobile menu toggle button -->
+        <button class="mobile-sidebar-toggle">
+            <span class="material-icons">menu</span>
+        </button>
     </header>
-
+    <!-- Mobile menu -->
+    <div class="mobile-sidebar">
+        <div class="mobile-sidebar-header">
+            <div class="logo">LiteSpeedUI</div>
+            <button class="mobile-sidebar-close-btn">
+                <span class="material-icons">close</span>
+            </button>
+        </div>
+        <div class="home-btn">
+            <a href="../index.html" class="btn fw-bold">Home</a>
+            <a href="./docs/docs.html" class="btn fw-bold">Documentation</a>
+        </div>
+    </div>
     <!-- Hero content -->
     <section class="hero">
         <div class="hero-ctn">
@@ -61,5 +79,6 @@
         </div>
         <p class="copyright">© 2022 LiteSpeedUI</p>
     </footer>
+    <script src="./docs/docs.js"></script>
 </body>
 </html>
