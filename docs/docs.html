@@ -18,10 +18,40 @@
             <a class="fw-bold" href="../index.html">Home</a>
             <a class="fw-bold" href="docs.html">Documentation</a>
         </nav>
+        <!-- Mobile menu toggle button -->
+        <button class="mobile-sidebar-toggle">
+            <span class="material-icons">menu</span>
+        </button>
     </header>
 
     <!-- Docs content-->
     <section class="docs-ctn">
+        <!-- Mobile menu -->
+        <div class="mobile-sidebar">
+            <div class="mobile-sidebar-header">
+                <div class="logo">LiteSpeedUI</div>
+                <button class="mobile-sidebar-close-btn">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="home-btn">
+                <a href="../index.html" class="btn fw-bold">Home</a>
+            </div>
+            <div class="mobile-sidebar-links">
+                <h3>Components</h3>
+                <a href="#alert" class="fw-bold">Alert</a>
+                <a href="#avatar" class="fw-bold">Avatar</a>
+                <a href="#badge" class="fw-bold">Badge</a>
+                <a href="#button" class="fw-bold">Button</a>
+                <a href="#card" class="fw-bold">Card</a>
+                <a href="#image" class="fw-bold">Image</a>
+                <a href="#input" class="fw-bold">Input</a>
+                <a href="#lists" class="fw-bold">Lists</a>
+                <a href="#modal" class="fw-bold">Modal</a>
+                <a href="#text-utilities" class="fw-bold">Text Utilities</a>
+            </div>
+        </div>
+        
         <!-- Component menu -->
         <aside class="docs-sidebar">
             <h2>Components</h2>
@@ -66,7 +96,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2509A%2520simple%2520primary%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2520%2520%2509A%2520simple%2520secondary%2520alert%2520with%25E2%2580%2594%253Ca%2520href%253D%2522%2523%2522%253E%2520an%2520example%2520link%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Echeck_circle%253C%252Fspan%253E%250A%2520%2520%2520%2520An%2520example%2520success%2520alert%2520with%2520an%2520icon%250A%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Ewarning%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520An%2520example%2520warning%2520alert%2520with%2520an%2520icon%250A%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Eerror%253C%252Fspan%253E%250A%2520%2509An%2520example%2520danger%2520alert%2520with%2520an%2520icon%250A%253C%252Fdiv%253E"
-  style="width: 706px; height: 521px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 521px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -80,7 +110,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2520alert-dismiss%2522%253E%250A%2520%2520%2520%253Cdiv%253EA%2520simple%2520primary%2520alert%25E2%2580%2594check%2520it%2520out%21%253C%252Fdiv%253E%250A%2520%2520%2520%253Cspan%2520id%253D%2522alert-dismiss-btn%2522%2520class%253D%2522material-icons%2522%253Eclose%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
-  style="width: 715px; height: 260px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 260px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -88,7 +118,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520alertWithDismiss%2520%253D%2520document.querySelector%28%2522.alert-dismiss%2522%29%253B%250Aconst%2520alertDismissBtn%2520%253D%2520document.querySelector%28%2522%2523alert-dismiss-btn%2522%29%253B%250A%250Aconst%2520removeDismissAlert%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520alertWithDismiss.classList.add%28%27alert-dismiss-remove%27%29%253B%250A%257D%250A%250AalertDismissBtn.addEventListener%28%2522click%2522%252C%2520removeDismissAlert%29%253B"
-  style="width: 715px; height: 318px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 318px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -114,7 +144,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-xl%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522br-full%2520img-full%2522%2520src%253D%2522..%252Fcomponents%252Fimages%252Fpratik.jpeg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-lg%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522br-full%2520img-full%2522%2520src%253D%2522..%252Fcomponents%252Fimages%252Fpratik.jpeg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-md%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522br-full%2520img-full%2522%2520src%253D%2522..%252Fcomponents%252Fimages%252Fpratik.jpeg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-sm%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522br-full%2520img-full%2522%2520src%253D%2522..%252Fcomponents%252Fimages%252Fpratik.jpeg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E"
-  style="width: 875px; height: 409px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 409px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -129,7 +159,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-xl%2520avatar-txt%2520br-full%2522%253EPD%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-lg%2520avatar-txt%2520br-full%2522%253EPD%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-md%2520avatar-txt%2520br-full%2522%253EPD%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-sm%2520avatar-txt%2520br-full%2522%253EPD%253C%252Fdiv%253E"
-  style="width: 572px; height: 260px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 260px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -155,7 +185,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-ctn%2520mg-sm%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons%2522%253Ehome%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520br-full%2522%253E5%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-ctn%2520mg-sm%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Eshopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520br-full%2522%253E5%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-ctn%2520mg-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Enotifications%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520br-full%2522%253E5%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
-  style="width: 606px; height: 409px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 409px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -181,7 +211,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-xl%2520badge-ctn%2520mg-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522br-full%2520img-full%2522%2520src%253D%2522..%252Fcomponents%252Fimages%252Fpratik.jpeg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-avatar%2520badge-xl%2520badge-online%2520br-full%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-lg%2520badge-ctn%2520mg-sm%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522br-full%2520img-full%2522%2520src%253D%2522..%252Fcomponents%252Fimages%252Fpratik.jpeg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-avatar%2520badge-lg%2520badge-offline%2520br-full%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-md%2520badge-ctn%2520mg-sm%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522br-full%2520img-full%2522%2520src%253D%2522..%252Fcomponents%252Fimages%252Fpratik.jpeg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-avatar%2520badge-md%2520badge-online%2520br-full%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-sm%2520badge-ctn%2520mg-sm%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522br-full%2520img-full%2522%2520src%253D%2522..%252Fcomponents%252Fimages%252Fpratik.jpeg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-avatar%2520badge-sm%2520badge-offline%2520br-full%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
-  style="width: 875px; height: 484px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 484px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -198,7 +228,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary%2520mg-sm%2522%253EPrimary%2520Solid%253C%252Fa%253E%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary-outline%2520mg-sm%2522%253EPrimary%2520Outline%253C%252Fa%253E%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-link%2520mg-sm%2522%253ELink%2520button%253C%252Fa%253E"
-  style="width: 732px; height: 242px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 242px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -220,7 +250,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-icon%2520mg-sm%2522%253E%250A%2509span%2520class%253D%2522material-icons%2522%253Eshopping_cart%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-icon-text%2520mg-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Ehome%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520Home%250A%253C%252Fa%253E%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-icon-text-outline%2520mg-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Esearch%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520Search%250A%253C%252Fa%253E"
-  style="width: 588px; height: 391px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 391px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -237,7 +267,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn-float-action%2520mg-sm%2522%253E%250A%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Eadd%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn-float-action%2520mg-sm%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Eedit%253C%252Fspan%253E%250A%253C%252Fa%253E"
-  style="width: 521px; height: 298px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 298px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -290,7 +320,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-vertical-ctn%2520mg-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522..%252Fcomponents%252Fimages%252Fbook.png%2522%2520alt%253D%2522product-image%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge%2522%253EBest%2520seller%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EThe%2520Psychology%2520of%2520Money%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Efavorite%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253Eby%2520Morgan%2520Housel%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-pricing%2522%253E%250A%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-price%2520fw-bold%2522%253E%25E2%2582%25B9240%253C%252Fp%253E%250A%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-price-cut%2522%253E%25E2%2582%25B9399%253C%252Fp%253E%250A%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-price-discount%2522%253Esave%2520%25E2%2582%25B9159%2520%2840%2525%29%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2509%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-icon-text%2522%253E%250A%2520%2520%2520%2520%2509%253Cspan%2520class%253D%2522material-icons%2522%253Eshopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2509Add%2520to%2520cart%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card-vertical-ctn%2520mg-sm%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522..%252Fcomponents%252Fimages%252Fbook2.jpg%2522%2520alt%253D%2522product-image%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520card-dismiss%2522%253Eclose%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EThe%2520Intelligent%2520Investor%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Efavorite%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253Eby%2520Benjamin%2520Graham%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-pricing%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-price%2520fw-bold%2522%253E%25E2%2582%25B9400%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-price-cut%2522%253E%25E2%2582%25B9499%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-price-discount%2522%253Esave%2520%25E2%2582%25B999%2520%2825%2525%29%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-icon-text%2522%253E%250A%2520%2520%2520%2520%2520%2509%253Cspan%2520class%253D%2522material-icons%2522%253Eshopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E"
-  style="width: 850px; height: 875px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 875px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -341,7 +371,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-vertical-ctn%2520mg-sm%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-ctn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-txt%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Out%2520of%2520stock%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522..%252Fcomponents%252Fimages%252Fbook.png%2522%2520alt%253D%2522product-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge%2522%253EBest%2520seller%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EThe%2520Psychology%2520of%2520Money%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Efavorite%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253Eby%2520Morgan%2520Housel%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-pricing%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-price%2520fw-bold%2522%253E%25E2%2582%25B9240%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-price-cut%2522%253E%25E2%2582%25B9399%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-price-discount%2522%253Esave%2520%25E2%2582%25B9159%2520%2840%2525%29%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-icon-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Eshopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card-vertical-ctn%2520mg-sm%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EThe%2520Intelligent%2520Investor%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Efavorite%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253Eby%2520Benjamin%2520Graham%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-pricing%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-price%2520fw-bold%2522%253E%25E2%2582%25B9400%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-price-cut%2522%253E%25E2%2582%25B9499%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-price-discount%2522%253Esave%2520%25E2%2582%25B999%2520%2825%2525%29%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-icon-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Read%2520more%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E"
-  style="width: 858px; height: 912px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 912px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -392,7 +422,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-horizontal-ctn%2520mg-sm%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fcomponents%252Fimages%252Fbook.png%2522%2520alt%253D%2522product-image%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horizontal-txt%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Ch4%253EThe%2520Psychology%2520of%2520Money%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cspan%2520class%253D%2522material-icons%2522%253Efavorite%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253Eby%2520Morgan%2520Housel%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-pricing%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-price%2520fw-bold%2522%253E%25E2%2582%25B9400%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-price-cut%2522%253E%25E2%2582%25B9499%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-price-discount%2522%253Esave%2520%25E2%2582%25B999%2520%2825%2525%29%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-icon-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Eshopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card-horizontal-ctn%2520mg-sm%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fcomponents%252Fimages%252Fbook2.jpg%2522%2520alt%253D%2522product-image%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horizontal-txt%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EThe%2520Intelligent%2520Investor%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Efavorite%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253Eby%2520Benjamin%2520Graham%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-pricing%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-price%2520fw-bold%2522%253E%25E2%2582%25B9240%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-price-cut%2522%253E%25E2%2582%25B9399%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-price-discount%2522%253Esave%2520%25E2%2582%25B9159%2520%2840%2525%29%253C%252Fp%253E%250A%2520%2520%2520%2520%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2509%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-icon-text%2522%253E%250A%2520%2520%2520%2520%2520%2509%2509%253Cspan%2520class%253D%2522material-icons%2522%253Eshopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509Add%2520to%2520cart%250A%2520%2520%2520%2520%2520%2509%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
-  style="width: 706px; height: 912px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 912px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -406,7 +436,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522..%252Fcomponents%252Fimages%252Fforest.jpg%2522%2520alt%253D%2522responsive-image%2522%2520class%253D%2522img-responsive%2520mg-sm%2522%253E"
-  style="width: 945px; height: 223px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 223px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -417,7 +447,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522..%252Fcomponents%252Fimages%252Fpratik.jpeg%2522%2520alt%253D%2522round-image%2522%2520class%253D%2522avatar-xl%2520img-round%2520mg-sm%2522%253E"
-  style="width: 960px; height: 205px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 205px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -463,7 +493,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-ctn%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-field%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522%2522%253EName%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522form-name%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520correct%2522%253Echeck_circle%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520incorrect%2522%253Eerror%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522error-mssg%2522%253EError%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-field%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522country-select%2522%253ECountry%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cselect%2520name%253D%2522country%2522%2520id%253D%2522country-select%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Coption%2520value%253D%2522india%2522%253EIndia%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Coption%2520value%253D%2522other%2522%253EOther%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fselect%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-field%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522%2522%253EGender%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2509%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522male%2522%2520name%253D%2522gender%2522%2520checked%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522male%2522%253EMale%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522female%2522%2520name%253D%2522gender%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522female%2522%253EFemale%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-field%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520id%253D%2522terms%2522%2520name%253D%2522aggrement%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522aggrement%2522%2520class%253D%2522checkbox%2522%253EI%2520accept%2520all%2520terms*%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520correct%2522%253Echeck_circle%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520incorrect%2522%253Eerror%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522error-mssg%2522%253EError%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520id%253D%2522form-submit%2522%2520class%253D%2522btn%2520btn-primary%2522%253ESubmit%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
-  style="width: 808px; height: 800px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -471,7 +501,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520formButton%2520%253D%2520document.querySelector%28%2522%2523form-submit%2522%29%253B%250Aconst%2520formName%2520%253D%2520document.querySelector%28%2522%2523form-name%2522%29%253B%250Aconst%2520formNumber%2520%253D%2520document.querySelector%28%2522%2523form-number%2522%29%253B%250Aconst%2520formChecked%2520%253D%2520document.querySelector%28%2522%2523terms%2522%29%253B%250A%250Aconst%2520formValidation%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520if%2520%28formName.value%2520%253D%253D%253D%2520%2522%2522%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520setError%28formName%252C%2520%27Name%2520cannot%2520be%2520empty%27%29%250A%2520%2520%2520%2520%257Delse%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520setSuccess%28formName%29%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520if%2520%28%21formChecked.checked%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520console.log%28%2522checkbox%2520clicked%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520setError%28formChecked%252C%2520%2522Please%2520click%2520on%2520the%2520box%2522%29%250A%2520%2520%2520%2520%257Delse%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520setSuccess%28formChecked%29%250A%2520%2520%2520%2520%257D%250A%257D%250A%250Aconst%2520setError%2520%253D%2520%28inputElement%252C%2520message%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520const%2520formField%2520%253D%2520inputElement.parentElement%253B%250A%2520%2520%2520%2520const%2520errorMsg%2520%253D%2520formField.querySelector%28%2522.error-mssg%2522%29%253B%250A%2520%2520%2520%2520errorMsg.textContent%2520%253D%2520message%253B%250A%2520%2520%2520%2520formField.classList%2520%253D%2520%2522form-field%2520error%2522%253B%250A%257D%250A%250Aconst%2520setSuccess%2520%253D%2520%28inputElement%252C%2520message%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520const%2520formField%2520%253D%2520inputElement.parentElement%253B%250A%2520%2520%2520%2520formField.classList%2520%253D%2520%2522form-field%2520success%2522%253B%250A%257D%250A%250AformButton.addEventListener%28%2522click%2522%252C%2520formValidation%29"
-  style="width: 639px; height: 783px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 783px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -490,7 +520,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253EHeading%25201%253C%252Fh1%253E%250A%253Ch2%253EHeading%25202%253C%252Fh2%253E%250A%253Ch3%253EHeading%25203%253C%252Fh3%253E%250A%253Ch4%253EHeading%25204%253C%252Fh4%253E%250A%253Ch5%253EHeading%25205%253C%252Fh5%253E"
-  style="width: 302px; height: 279px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 279px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -510,7 +540,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522para-lg%2522%253EThis%2520large%2520size%2520pragraph%253C%252Fp%253E%250A%253Cp%2520class%253D%2522para-md%2520mg-bottom-sm%2522%253EThis%2520medium%2520size%2520pragraph%253C%252Fp%253E%250A%253Cp%2520class%253D%2522para-sm%2522%253EThis%2520small%2520size%2520pragraph%253C%252Fp%253E%250A%250A%253Cp%2520class%253D%2522para-lg%2520gray-text%2522%253EThis%2520large%2520size%2520pragraph%2520with%2520gray%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522para-md%2520gray-text%2520mg-bottom-sm%2522%253EThis%2520medium%2520size%2520pragraph%2520with%2520gray%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522para-sm%2520gray-text%2522%253EThis%2520small%2520size%2520pragraph%2520with%2520gray%2520text%253C%252Fp%253E"
-  style="width: 875px; height: 316px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 316px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -523,7 +553,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch3%2520class%253D%2522text-center%2522%253EText%2520align%2520center%253C%252Fh3%253E%250A%253Ch3%2520class%253D%2522text-left%2522%253EText%2520align%2520left%253C%252Fh3%253E%250A%253Ch3%2520class%253D%2522text-right%2522%253EText%2520align%2520right%253C%252Fh3%253E"
-  style="width: 538px; height: 242px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 242px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -542,7 +572,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522spaced-list%2522%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EList%2520item%25203%253C%252Fli%253E%250A%253C%252Ful%253E"
-  style="width: 352px; height: 279px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 279px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -572,7 +602,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522stacked-list%2522%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stack-list-item%2520mg-bottom-sm%2520pd-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522mg-bottom-sm%2522%253EList%2520title%25201%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESome%2520text%2520for%2520information%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stack-list-item%2520mg-bottom-sm%2520pd-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522mg-bottom-sm%2522%253EList%2520title%25202%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESome%2520text%2520for%2520information%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stack-list-item%2520mg-bottom-sm%2520pd-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522mg-bottom-sm%2522%253EList%2520title%25203%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESome%2520text%2520for%2520information%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
-  style="width: 648px; height: 558px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 558px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -593,7 +623,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal-demo-container%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522pd-bottom-md%2522%253EDeal%2520of%2520the%2520day%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522fw-bold%2520pd-bottom-lg%2522%253EThe%2520Psychology%2520of%2520money%2520is%252050%2525%2520off%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%2520now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520id%253D%2522modal-close%2522%2520class%253D%2522modal-close-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Eclose%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
-  style="width: 774px; height: 335px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 335px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -614,7 +644,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520modal-open-btn%2522%253EOpen%2520modal%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522modal-overlay%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-demo-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522pd-bottom-md%2522%253EDeal%2520of%2520the%2520day%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522fw-bold%2520pd-bottom-lg%2522%253EThe%2520Psychology%2520of%2520money%2520is%252050%2525%2520off%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%2520now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520id%253D%2522modal-close%2522%2520class%253D%2522modal-close-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Eclose%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
-  style="width: 808px; height: 409px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 409px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -622,7 +652,7 @@
             <div class="docs-code-block">
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520modalOverlay%2520%253D%2520document.querySelector%28%2522.modal-overlay%2522%29%253B%250Aconst%2520openModalBtn%2520%253D%2520document.querySelector%28%2522.modal-open-btn%2522%29%253B%250Aconst%2520closeModalBtn%2520%253D%2520document.querySelector%28%2522%2523modal-close%2522%29%253B%250A%250AopenModalBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalOverlay.classList.add%28%2522open-modal%2522%29%253B%250A%257D%29%250A%250AcloseModalBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalOverlay.classList.remove%28%2522open-modal%2522%29%253B%250A%257D%29"
-  style="width: 1024px; height: 473px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 100%; height: 473px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
@@ -632,13 +662,14 @@
     <footer>
         <p>Made by Pratik Devle</p>
         <div class="footer-links">
-            <a href="thub.com/Pratik1005"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/Pratik1005"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/pratik-devle-296184160"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://twitter.com/DevlePratik"><i class="fab fa-twitter"></i></a>
         </div>
         <p class="copyright">© 2022 LiteSpeedUI</p>
     </footer>
 
+    <script src="./docs.js"></script>
     <script src="../components/components.js"></script>
 </body>
 </html>
