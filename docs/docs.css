@@ -92,6 +92,10 @@ footer p.copyright {
     font-size: 0.875rem;
 }
 
+.docs-code-block {
+    display: none;
+}
+
 /* Media queries */
 @media screen and (max-width: 800px) {
     body {

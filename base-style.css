@@ -172,5 +172,6 @@ a {
 /* Utility classes */
 .flex-ctn {
     display: flex;
+    flex-wrap: wrap;
 }
 
