@@ -3,6 +3,9 @@
 @import "./mobile-menu.css";
 @import "../style.css";
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* Docs */
 .component-box-border {
@@ -26,7 +29,6 @@
     "aside aside comp comp comp comp"
     "aside aside comp comp comp comp"
     "aside aside comp comp comp comp";
-    width: 100%;
 }
 
 .docs-ctn aside.docs-sidebar {
@@ -98,16 +100,11 @@ footer p.copyright {
 
 /* Media queries */
 @media screen and (max-width: 800px) {
-    body {
-        width: 100%;
-    }
-
     header nav {
         display: none;
     }
 
     .docs-ctn {
-        display: grid;
         grid-template-areas: 
         "comp";
     }
