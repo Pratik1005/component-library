@@ -67,6 +67,17 @@ aside.docs-sidebar .components-link a:hover{
     gap: 1rem;
 }
 
+/* vertical cards */
+.docs-card-vertical {
+    width: 100%;
+    max-width: 300px;
+}
+
+.card-vertical-ctn img.card-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 /* horizontal cards */
 .docs-card-horizontal {
     width: 100%;
