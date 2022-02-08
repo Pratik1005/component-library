@@ -169,12 +169,6 @@ a {
     text-decoration: none;
 }
 
-/* Utility classes */
-.flex-ctn {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 /* Media queries */
 @media screen and (max-width: 800px) {
     h1 {

@@ -7,6 +7,11 @@ html {
     scroll-behavior: smooth;
 }
 
+.flex-ctn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .docs-ctn {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -62,6 +67,12 @@ aside.docs-sidebar .components-link a:hover{
     gap: 1rem;
 }
 
+/* modal */
+.docs-modal-demo {
+    width: 100%;
+    max-width: 500px;
+}
+
 /* footer */
 footer {
     display: flex;
@@ -101,7 +112,7 @@ footer p.copyright {
         display: none;
     }
 
-    .docs-component {
+    /* .docs-component {
         width: 100%;
-    }
+    } */
 }
