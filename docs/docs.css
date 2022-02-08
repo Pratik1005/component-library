@@ -90,6 +90,14 @@ aside.docs-sidebar .components-link a:hover{
     max-width: 500px;
 }
 
+/* Floating btn */
+a.floating-cta {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    box-shadow: var(--light-shadow);
+}
+
 /* footer */
 footer {
     display: flex;
@@ -131,5 +139,12 @@ footer p.copyright {
 
     .docs-component {
         width: 100%;
+    }
+
+    .docs-hor-card-img {
+        width: 150px;
+        max-width: 100%;
+        height: 200px;
+        max-height: 100%;
     }
 }
