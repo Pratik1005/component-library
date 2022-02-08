@@ -67,6 +67,12 @@ aside.docs-sidebar .components-link a:hover{
     gap: 1rem;
 }
 
+/* horizontal cards */
+.docs-card-horizontal {
+    width: 100%;
+    max-width: 400px;
+}
+
 /* modal */
 .docs-modal-demo {
     width: 100%;
@@ -94,9 +100,9 @@ footer p.copyright {
     font-size: 0.875rem;
 }
 
-.docs-code-block {
+/* .docs-code-block {
     display: none;
-}
+} */
 
 /* Media queries */
 @media screen and (max-width: 800px) {
@@ -112,7 +118,7 @@ footer p.copyright {
         display: none;
     }
 
-    /* .docs-component {
+    .docs-component {
         width: 100%;
-    } */
+    }
 }
