@@ -53,7 +53,7 @@ aside.docs-sidebar .components-link a:hover{
 
 /* Docs */
 .component-box-border {
-    border: 0.125rem solid #dee2e6;
+    border: 0.125rem solid var(--light-gray);
     border-radius: 0.25rem;
 }
 
@@ -75,7 +75,7 @@ aside.docs-sidebar .components-link a:hover{
 /* vertical cards */
 .docs-card-vertical {
     width: 100%;
-    max-width: 300px;
+    max-width: 18.75rem;
 }
 
 .card-vertical-ctn img.card-img {
@@ -86,13 +86,13 @@ aside.docs-sidebar .components-link a:hover{
 /* horizontal cards */
 .docs-card-horizontal {
     width: 100%;
-    max-width: 400px;
+    max-width: 25rem;
 }
 
 /* modal */
 .docs-modal-demo {
     width: 100%;
-    max-width: 500px;
+    max-width: 31.25rem;
 }
 
 /* Floating btn */
@@ -110,12 +110,12 @@ footer {
     align-items: center;
     gap: 1rem;
     background-color: var(--clr-primary);
-    color: #fff;
+    color: var(--clr-white);
     padding: 2rem 0;
 }
 
 footer .footer-links a{
-    color: #fff;
+    color: var(--clr-white);
     padding-right: 0.875rem;
     font-size: 1.5rem;
 }
@@ -123,10 +123,6 @@ footer .footer-links a{
 footer p.copyright {
     font-size: 0.875rem;
 }
-
-/* .docs-code-block {
-    display: none;
-} */
 
 /* Media queries */
 @media screen and (max-width: 800px) {
@@ -147,9 +143,9 @@ footer p.copyright {
     }
 
     .docs-hor-card-img {
-        width: 150px;
+        width: 9.375rem;
         max-width: 100%;
-        height: 200px;
+        height: 12.5rem;
         max-height: 100%;
     }
 }

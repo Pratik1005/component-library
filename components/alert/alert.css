@@ -14,27 +14,27 @@
 }
 
 .alert-primary {
-    color: #084298;
+    color: var(--alert-primary);
     background-color: #cfe2ff;
 }
 
 .alert-secondary {
-    color: #41464b;
+    color: var(--alert-secondary);
     background-color: #e2e3e5;
 }
 
 .alert-success {
-    color: #0f5132;
+    color: var(--alert-success);
     background-color: #d1e7dd;
 }
 
 .alert-danger {
-    color: #842029;
+    color: var(--alert-danger);
     background-color: #f8d7da;
 }
 
 .alert-warning {
-    color: #664d03;
+    color: var(--alert-warning);
     background-color: #fff3cd;
 }
 

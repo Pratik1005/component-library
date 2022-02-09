@@ -7,12 +7,36 @@
     --clr-primary: #6D28D9;
     --clr-primary-light: #EDE9FE;
     --clr-background-light: #fafafa;
-    --clr-component-border: #dee2e6;
+    --light-gray: #dee2e6;
     --clr-txt-dark: #282828;
     --ff-primary: "Roboto", sans-serif;
     --transition: all 0.3s linear;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* alert colors */
+    --alert-primary: #084298;
+    --alert-secondary: #41464b;
+    --alert-success: #0f5132;
+    --alert-danger: #842029;
+    --alert-warning: #664d03;
+    /* badge */
+    --clr-white: #ffffff;
+    --badge-online: #F59E0B;
+    --badge-offline: #808080;
+    /* card */
+    --black-soft: rgba(0,0,0,0.1);
+    --black-soft-2: rgba(0,0,0,0.2);
+    --overlay-bg: rgba(0,0,0,0.3);
+    /* inputs */
+    --input-border: #A9A9A9;
+    --input-success: #2ecc71;
+    --input-error: #e74c3c;
+    /* list */
+    --list-border: #D5DBDB;
+    /* modal */
+    --modal-overlay-bg: rgba(0,0,0,0.5);
+    /* text utility */
+    --txt-gray: #9a9a9a;
 }
 
 /* Global styles */

@@ -74,7 +74,7 @@ section.hero {
 
 .hero-links .cta-link-1 {
     background-color: var(--clr-primary);
-    color: #fff;
+    color: var(--clr-white);
     padding: 0.375rem 0.75rem;
     border-radius: 0.25rem;
 }
@@ -88,7 +88,7 @@ section.hero {
 
 .hero-links .cta-link-2:hover {
     background-color: var(--clr-primary);
-    color: #fff;
+    color: var(--clr-white);
     transition: var(--transition);
 }
 
@@ -104,7 +104,8 @@ section.hero {
 }
 
 .install-code {
-    max-height: 300px;
+    max-height: 18.75rem;
+    margin-top: 5rem;
 }
 
 /* footer */
@@ -114,12 +115,12 @@ footer {
     align-items: center;
     gap: 1rem;
     background-color: var(--clr-primary);
-    color: #fff;
+    color: var(--clr-white);
     padding: 2rem 0;
 }
 
 footer .footer-links a{
-    color: #fff;
+    color: var(--clr-white);
     padding-right: 0.875rem;
     font-size: 1.5rem;
 }

@@ -11,5 +11,5 @@ ul.stacked-list {
 }
 
 ul.stacked-list div.stack-list-item {
-    border: 1px solid #D5DBDB;
+    border: 1px solid var(--list-border);
 }
