@@ -17,6 +17,8 @@ This is a component library made using HTML, CSS and vanilla JS. To start using 
 - <a href="https://litespeedui.netlify.app/docs/docs.html#input">Input</a>
 - <a href="https://litespeedui.netlify.app/docs/docs.html#lists">List</a>
 - <a href="https://litespeedui.netlify.app/docs/docs.html#modal">Modal</a>
+- <a href="https://litespeedui.netlify.app/docs/docs.html#rating">Rating</a>
 - <a href="https://litespeedui.netlify.app/docs/docs.html#text-utilities">Text Utility</a>
+- <a href="https://litespeedui.netlify.app/docs/docs.html#toast">Toast</a>
 
 
