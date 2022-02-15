@@ -103,6 +103,21 @@ a.floating-cta {
     box-shadow: var(--light-shadow);
 }
 
+/* toast */
+.docs-toast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--clr-primary-light);
+    width: fit-content;
+}
+
+.docs-toast span.material-icons {
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
 /* footer */
 footer {
     display: flex;

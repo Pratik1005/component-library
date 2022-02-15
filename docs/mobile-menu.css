@@ -27,6 +27,7 @@ header button.mobile-sidebar-toggle span.material-icons{
     transition: var(--transition);
     transform: translate(-100%);
     z-index: 3;
+    overflow-y: auto;
 }
 
 .show-mobile-sidebar {

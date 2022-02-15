@@ -49,7 +49,9 @@
                 <a href="#input" class="fw-bold">Input</a>
                 <a href="#lists" class="fw-bold">Lists</a>
                 <a href="#modal" class="fw-bold">Modal</a>
+                <a href="#rating" class="fw-bold">Rating</a>
                 <a href="#text-utilities" class="fw-bold">Text Utilities</a>
+                <a href="#toast" class="fw-bold">Toast</a>
             </div>
         </div>
         
@@ -66,7 +68,9 @@
                 <a href="#input" class="fw-bold">Input</a>
                 <a href="#lists" class="fw-bold">Lists</a>
                 <a href="#modal" class="fw-bold">Modal</a>
+                <a href="#rating" class="fw-bold">Rating</a>
                 <a href="#text-utilities" class="fw-bold">Text Utilities</a>
+                <a href="#toast" class="fw-bold">Toast</a>
             </div>
         </aside>
         <!-- Components -->
@@ -631,7 +635,31 @@
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
-
+            <!-- Rating -->
+            <h1 class="mg-sm" id="rating">Rating</h1>
+            <p class="component-info mg-sm">Ratings are used to rate the product or service. There are two types of rating: user rating and badge rating.</p>
+            <div class="flex-ctn component-box-border mg-sm pd-sm">
+                <div class="user-rating mg-sm">
+                    <span class="material-icons rating-fill">star</span>
+                    <span class="material-icons rating-fill">star</span>
+                    <span class="material-icons rating-fill">star</span>
+                    <span class="material-icons rating">star</span>
+                    <span class="material-icons rating">star</span>
+                </div>
+                <div class="badge-rating mg-sm br-sm">
+                    <span>3</span>
+                    <span class="material-icons rating-fill">star</span>
+                    <span>|</span>
+                    <span>10</span>
+                </div>
+            </div>
+            <div class="docs-code-block">
+                <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%253Cspan%2520class%253D%2522material-icons%2520rating-fill%2522%253Estar%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522material-icons%2520rating-fill%2522%253Estar%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522material-icons%2520rating-fill%2522%253Estar%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522material-icons%2520rating%2522%253Estar%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522material-icons%2520rating%2522%253Estar%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-rating%2520mg-sm%2520br-sm%2522%253E%250A%2520%2520%253Cspan%253E3%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522material-icons%2520rating-fill%2522%253Estar%253C%252Fspan%253E%250A%2520%2520%253Cspan%253E%257C%253C%252Fspan%253E%250A%2520%2520%253Cspan%253E10%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+  style="width: 100%; height: 411px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+            </div>
             <!-- Text utilities -->
             <h1 id="text-utilities" class="mg-sm">Text utilities</h1>
             <p class="component-info mg-sm">Below are the text utilities style</p>
@@ -683,6 +711,38 @@
                 <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch3%2520class%253D%2522text-center%2522%253EText%2520align%2520center%253C%252Fh3%253E%250A%253Ch3%2520class%253D%2522text-left%2522%253EText%2520align%2520left%253C%252Fh3%253E%250A%253Ch3%2520class%253D%2522text-right%2522%253EText%2520align%2520right%253C%252Fh3%253E"
   style="width: 100%; height: 242px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+            </div>
+            <!-- Toast -->
+            <h1 class="mg-sm" id="toast">Toast</h1>
+            <p class="component-info mg-sm">Toast is used to push notifications to users.</p>
+            <div class="component-box-border mg-sm pd-sm">
+                <div class="docs-toast br-sm">
+                    Added to cart
+                    <span class="material-icons">close</span> 
+                </div>
+            </div>
+            <h2 class="mg-sm">Toast demo</h2>
+            <div class="component-box-border mg-sm pd-sm">
+                <button id="toast-btn" class="btn btn-primary">Show Toast</button>
+            </div>
+            <div class="toast br-sm">
+                Added to cart
+                <span id="close-toast" class="material-icons">close</span> 
+            </div>
+            <div class="docs-code-block">
+                <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520br-sm%2522%253E%250A%2520%2520%2520%2520Added%2520to%2520cart%250A%2520%2520%2520%2520%253Cspan%2520id%253D%2522close-toast%2522%2520class%253D%2522material-icons%2522%253Eclose%253C%252Fspan%253E%2520%250A%253C%252Fdiv%253E"
+  style="width: 100%; height: 260px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+            </div>
+            <h3 class="mg-sm">Javascript code</h3>
+            <div class="docs-code-block">
+                <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28237%2C233%2C254%2C1%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520toastBtn%2520%253D%2520document.querySelector%28%2522%2523toast-btn%2522%29%253B%250Aconst%2520toast%2520%253D%2520document.querySelector%28%2522.toast%2522%29%253B%250Aconst%2520closeToast%2520%253D%2520document.querySelector%28%2522%2523close-toast%2522%29%253B%250A%250Aconst%2520hideToast%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520toast.classList.remove%28%2522show-toast%2522%29%253B%250A%257D%250A%250Aconst%2520showToast%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520toast.classList.add%28%2522show-toast%2522%29%253B%250A%2520%2520%2520%2520setTimeout%28hideToast%252C%25203000%29%253B%250A%257D%250A%250AtoastBtn.addEventListener%28%2522click%2522%252C%2520showToast%29%253B%250AcloseToast.addEventListener%28%2522click%2522%252C%2520hideToast%29%253B"
+  style="width: 100%; height: 448px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
             </div>
