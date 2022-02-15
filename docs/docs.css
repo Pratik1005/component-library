@@ -113,6 +113,11 @@ a.floating-cta {
     width: fit-content;
 }
 
+.docs-toast span.material-icons {
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
 /* footer */
 footer {
     display: flex;
