@@ -1,0 +1,20 @@
+.toast {
+    display: none;
+    padding: 1rem;
+    background-color: var(--clr-primary-light);
+    width: fit-content;
+}
+
+.toast.show-toast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+.toast span.material-icons {
+    cursor: pointer;
+    margin-left: 1rem;
+}

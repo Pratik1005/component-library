@@ -1,0 +1,21 @@
+span.rating {
+    color: var(--light-gray);
+    cursor: pointer;
+}
+
+span.rating-fill {
+    color: var(--clr-rating);
+    cursor: pointer;
+}
+
+.badge-rating {
+    display: flex;
+    align-items: center;
+    background-color: var(--badge-rating-bg);
+    padding: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.badge-rating span.rating-fill {
+    font-size: 0.875rem;
+}

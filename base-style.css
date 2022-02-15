@@ -37,6 +37,9 @@
     --modal-overlay-bg: rgba(0,0,0,0.5);
     /* text utility */
     --txt-gray: #9a9a9a;
+    /* rating */
+    --clr-rating: #FDCC0D;
+    --badge-rating-bg: #f1f1f1;
 }
 
 /* Global styles */

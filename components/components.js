@@ -55,3 +55,20 @@ openModalBtn.addEventListener("click", () => {
 closeModalBtn.addEventListener("click", () => {
     modalOverlay.classList.remove("open-modal");
 })
+
+// Toast demo
+const toastBtn = document.querySelector("#toast-btn");
+const toast = document.querySelector(".toast");
+const closeToast = document.querySelector("#close-toast");
+
+const hideToast = () => {
+    toast.classList.remove("show-toast");
+}
+
+const showToast = () => {
+    toast.classList.add("show-toast");
+    setTimeout(hideToast, 3000);
+}
+
+toastBtn.addEventListener("click", showToast);
+closeToast.addEventListener("click", hideToast);
